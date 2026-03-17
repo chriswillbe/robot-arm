@@ -1,0 +1,93 @@
+# -----------------------------
+# OS / editor junk
+# -----------------------------
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# -----------------------------
+# Logs / temp
+# -----------------------------
+*.log
+*.jou
+*.str
+*.tmp
+tmp/
+temp/
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# -----------------------------
+# Generic build outputs
+# -----------------------------
+build/
+dist/
+out/
+
+# -----------------------------
+# Vivado
+# -----------------------------
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.runs/
+.gen/
+*.xpr
+*.xsa.tmp
+*.jou
+*.log
+
+# -----------------------------
+# Quartus
+# -----------------------------
+db/
+incremental_db/
+output_files/
+*.qws
+
+# -----------------------------
+# ModelSim / Questa
+# -----------------------------
+transcript
+vsim.wlf
+work/
+modelsim.ini
+
+# -----------------------------
+# PetaLinux / Yocto
+# -----------------------------
+tmp/
+sstate-cache/
+build/
+images/linux/*.wic
+images/linux/*.tar.gz
+images/linux/*.cpio.gz
+
+# -----------------------------
+# Binary outputs / artifacts
+# -----------------------------
+*.bit
+*.bin
+*.rbf
+*.sof
+*.elf
+*.exe
+*.o
+*.a
+
+# -----------------------------
+# Optional release artifacts
+# -----------------------------
+releases/
