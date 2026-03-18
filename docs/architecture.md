@@ -1,20 +1,28 @@
 # Architecture Overview
 
+## Logical Layers
+
+```
+PS (ARM)
+└── AXI Interface
+    └── Dispatcher
+        └── Per-Axis Channel
+            ├── Motor Control
+            └── Encoder Decode
+```
+
 ## Design Hierarchy
+
 ```
-Project
-└── robot_controller.xpr
-    └── IP
-        └── multi_axis_motion_control.sv
-            └── Instance
-                └── multi_axis_motion_control_slave_S00_AXI.sv
-                    └── Dispatcher
-                        └── channel_signal_dispatcher.sv
-                            └── Channel
-                                └── axis_control_channel.sv
-                                    ├── motor_controller_core.v
-                                    └── quadrature_decoder_core.v
+robot_controller.xpr
+└── multi_axis_motion_control.sv
+    └── multi_axis_motion_control_slave_S00_AXI.sv
+        └── channel_signal_dispatcher.sv
+            └── axis_control_channel.sv
+                ├── motor_controller_core.v
+                └── quadrature_decoder_core.v
 ```
+
 ## Module Breakdown
 
 ### Project
