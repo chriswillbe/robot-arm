@@ -15,16 +15,44 @@ Build a robust multi-axis control system for a robot arm using FPGA-based low-le
 - Incremental encoders
 
 ## Repository layout
+### Current Repository Structure
+.
+├── docs/
+├── fpga/
+├── notes/
+├── software/
+└── README.md
 
 - `docs/` architecture notes, register maps, bring-up docs, roadmap
+- `fpga/` RTL, simulation, constraints, Vivado projects and scripts
+- `notes/` lab notebook and debugging notes
+- `software/` bare-metal, Linux, PetaLinux, userspace utilities
+
+### Planned Structure (Future Expansion)
+.
+├── docs/
+├── fpga/
+├── notes/
+├── hardware/
+├── README.md
+├── software/
+│   ├── shared/
+│   ├── embedded/
+│   └── host/
+├── control/
+├── scripts/
+├── tools/
+└── test/
+
+- `docs/` architecture notes, register maps, bring-up docs, roadmap
+- `fpga/` RTL, simulation, constraints, Vivado projects and scripts
+- `notes/` lab notebook and debugging notes
 - `hardware/` board-specific notes, schematics, wiring
-- `fpga/` RTL, simulation, constraints, Vivado/Quartus projects and scripts
 - `software/` bare-metal, Linux, PetaLinux, userspace utilities
 - `control/` kinematics, trajectory generation, calibration, experiments
 - `scripts/` helper scripts for build, flash, setup, packaging
 - `tools/` small utilities
 - `test/` testing assets
-- `notes/` lab notebook and debugging notes
 
 ## Build philosophy
 
