@@ -248,7 +248,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>88cf1c40</spirit:value>
+            <spirit:value>402568a0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -264,7 +264,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>c0407fe3</spirit:value>
+            <spirit:value>402568a0</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -719,61 +719,74 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/motor_controller_core.v</spirit:name>
+        <spirit:name>src/multi_axis_motion_control.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/quad_decoder_core.v</spirit:name>
+        <spirit:name>src/quad_decoder_core.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/axis_control_channel.sv</spirit:name>
+        <spirit:name>src/channel_signal_dispatcher.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/channel_signal_dispatcher.sv</spirit:name>
+        <spirit:name>src/axis_control_channel.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/multi_axis_motion_control_1_0/hdl/multi_axis_motion_control_slave_lite_v1_0_S00_AXI.sv</spirit:name>
+        <spirit:name>src/motor_controller_core.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/multi_axis_motion_control_slave_lite_v1_0_S00_AXI.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_bad6d979</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/constrs_1/new/clock_constraints.xdc</spirit:name>
-        <spirit:userFileType>xdc</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>../../ip_dev/multi_axis_motion_control_1_0/hdl/multi_axis_motion_control.sv</spirit:name>
-        <spirit:fileType>systemVerilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_0026e094</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_2287c95f</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/motor_controller_core.v</spirit:name>
+        <spirit:name>src/multi_axis_motion_control.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/quad_decoder_core.v</spirit:name>
+        <spirit:name>src/quad_decoder_core.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/axis_control_channel.sv</spirit:name>
+        <spirit:name>src/channel_signal_dispatcher.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/edit_multi_axis_motion_control_v1_0.srcs/sources_1/new/channel_signal_dispatcher.sv</spirit:name>
+        <spirit:name>src/axis_control_channel.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/multi_axis_motion_control_1_0/hdl/multi_axis_motion_control_slave_lite_v1_0_S00_AXI.sv</spirit:name>
-        <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:name>src/motor_controller_core.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ip_dev/multi_axis_motion_control_1_0/hdl/multi_axis_motion_control.sv</spirit:name>
+        <spirit:name>src/multi_axis_motion_control_slave_lite_v1_0_S00_AXI.sv</spirit:name>
         <spirit:fileType>systemVerilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -816,14 +829,14 @@
       <xilinx:displayName>multi_axis_motion_control_v2_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:vendorDisplayName>Crowell Street Robotics</xilinx:vendorDisplayName>
-      <xilinx:coreRevision>64</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-01-27T00:55:19Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>65</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-03-22T00:56:36Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="6e51c7f8"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="0c04c4c2"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4100d8cf"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="8cb9f737"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="dccaffd3"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="b2c76dd2"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="5f8734dc"/>
