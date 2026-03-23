@@ -109,7 +109,8 @@ wait_on_run impl_1
 # ----- Optional: export hardware platform with bitstream -----
 set xsa_out [file normalize ./build/${project_name}.xsa]
 open_run impl_1
-write_hw_platform -fixed -include_bit -file $xsa_out
+write_hw_platform -fixed -include_bit -file $xsa_out -force
+# write_hw_platform -fixed -include_bit -file $xsa_out
 
 puts "INFO: Build complete."
 puts "INFO: Bitstream should be under:"
