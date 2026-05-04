@@ -188,7 +188,7 @@ int main(void)
             //watchdog timer service
             watchdog_status = GLOBALS->Watchdog_Status;
             watchdog_count++;
-            if(watchdog_count < 4000)
+            if(watchdog_count > 4000)
             {
                 GLOBALS->Watchdog_Ctl_Set = WD_KICK_CMD;
             }
@@ -200,21 +200,21 @@ int main(void)
             cps = window_count * scaler;
             rpm = (cps * 60) / 2048;
             // --- Compute/write motor command ---
-            BASE_AXIS->Motor_Cmd = 4095;
+            BASE_AXIS->Motor_Cmd = 2095;
             // Debug print occasionally (NOT every tick)
             static int n = 0;
             if (++n >= CONTROL_HZ) {
                 n = 0;
-            if(!(GLOBALS->Watchdog_Status & WD_STATUS_ENABLED))
-            {
-                xil_printf("Enabling Watchdog\r\n");
-                GLOBALS->Watchdog_Ctl_Set = WD_ENABLE_CMD;  // watchdog_enable_cmd
-            }
-            if(!!(GLOBALS->Watchdog_Status & WD_STATUS_EXPIRED))
-            {
-                xil_printf("Watchdog expired, resetting...\r\n");
-                GLOBALS->Watchdog_Ctl_Set = WD_CLEAR_CMD;
-            }
+                if(!(GLOBALS->Watchdog_Status & WD_STATUS_ENABLED))
+                {
+                    xil_printf("Enabling Watchdog\r\n");
+                    GLOBALS->Watchdog_Ctl_Set = WD_ENABLE_CMD;  // watchdog_enable_cmd
+                }
+                if(!!(GLOBALS->Watchdog_Status & WD_STATUS_EXPIRED))
+                {
+                    xil_printf("Watchdog expired, resetting...\r\n");
+                    GLOBALS->Watchdog_Ctl_Set = WD_CLEAR_CMD;
+                }
                 xil_printf("pos=%d, rpm=%d, sTicks=%d, wd_cnt=%d, wd_cmd=0x%x, wd_stat=0x%x, sys_cmd=0x%x, sys_stat=0x%x\r\n",
                     position, rpm, servo_ticks, watchdog_count, GLOBALS->Watchdog_Ctl_Set, watchdog_status, GLOBALS->Sys_Control, GLOBALS->Sys_Status);
             }

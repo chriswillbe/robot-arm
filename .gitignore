@@ -50,6 +50,16 @@ out/
 *.log
 
 # -----------------------------
+# Vitis workspace (ignore all)
+# -----------------------------
+vitis_workspace/**
+software/baremetal/
+# But keep specific source files if needed
+!vitis_workspace/hello_world/src/helloworld.c
+!vitis_workspace/hello_world/src/robot.h
+
+
+# -----------------------------
 # Quartus
 # -----------------------------
 db/
